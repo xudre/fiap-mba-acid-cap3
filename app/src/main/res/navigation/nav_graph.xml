@@ -11,29 +11,20 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_homeFragment_to_storeFragment"
-            app:destination="@id/storeFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/storeFragment"
-        android:name="br.com.fiap.acid.cap3.view.StoreFragment"
-        android:label="fragment_store"
-        tools:layout="@layout/fragment_store" >
+            android:id="@+id/action_homeFragment_to_userFragment"
+            app:destination="@id/userFragment" />
         <action
-            android:id="@+id/action_storeFragment_to_productFragment"
+            android:id="@+id/action_homeFragment_to_productFragment"
             app:destination="@id/productFragment" />
-        <argument
-            android:name="segment"
-            app:argType="string"
-            app:nullable="true" />
     </fragment>
     <fragment
         android:id="@+id/productFragment"
         android:name="br.com.fiap.acid.cap3.view.ProductFragment"
         android:label="fragment_product"
-        tools:layout="@layout/fragment_product" >
-        <argument
-            android:name="product"
-            app:argType="br.com.fiap.acid.cap3.model.ProductData" />
-    </fragment>
+        tools:layout="@layout/fragment_product" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="br.com.fiap.acid.cap3.view.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" />
 </navigation>

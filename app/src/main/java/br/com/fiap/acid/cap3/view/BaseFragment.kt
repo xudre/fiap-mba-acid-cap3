@@ -16,7 +16,7 @@ abstract class BaseFragment<T : ViewBinding>(
     var binding: T? = null
         private set
 
-    val viewModel: StoreViewModel by activityViewModels()
+    protected val viewModel: StoreViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
