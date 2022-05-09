@@ -25,8 +25,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Produtos"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_user" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_user"
+        tools:visibility="visible" />
 </androidx.constraintlayout.widget.ConstraintLayout>

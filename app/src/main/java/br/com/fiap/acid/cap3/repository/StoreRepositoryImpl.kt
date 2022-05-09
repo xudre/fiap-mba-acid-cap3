@@ -25,10 +25,10 @@ class StoreRepositoryImpl : StoreRepository {
         db.collection(COLLECTION_ACCESS)
             .add(data)
             .addOnCompleteListener {
-
+                // Documento salvo com sucesso
             }
             .addOnFailureListener {
-
+                // Falha ao salvar o documento
             }
     }
 
